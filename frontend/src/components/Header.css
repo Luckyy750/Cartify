@@ -1,0 +1,77 @@
+.main-header {
+  background-color: var(--bg-surface, #ffffff); /* 👈 Agar abhi bhi transparent lage, toh ise direct '#ffffff' ya '#1a1a1a' (dark theme ke liye) de dein */
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 9999 !important; /* 👈 Isko badha kar 9999 kar diya taaki baki saara text pakka iske PEECHE jaye */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* 👈 Halka sa shadow badhayein taaki scrolling ka premium effect dikhe */
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--text-main);
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  color: var(--primary-color);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  scale: 1.2;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cart-badge {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+/* 👇 Sahi tarike se integrated Sign In Button aur uska dynamic Hover State */
+.auth-nav-btn {
+  background-color: #000000;
+  color: #ffffff !important; /* Forcefully text white rakhne ke liye */
+  padding: 8px 18px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.auth-nav-btn:hover {
+ 
+  
+  transform: translateY(-1px);
+}

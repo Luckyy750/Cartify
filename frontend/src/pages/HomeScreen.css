@@ -1,0 +1,25 @@
+.home-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.loading-state, .error-state {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 40px;
+}
+
+/* Bulleproof CSS Grid - Jo cards ko perfectly 3 ya 4 columns me baantega bina khichdi banaye */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+}

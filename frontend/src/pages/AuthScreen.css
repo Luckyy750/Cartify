@@ -1,0 +1,87 @@
+.auth-screen-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.auth-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #1e293b;
+  text-align: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 🌟 SIGN IN AUR REGISTER DONO KE DAPPO KO SATH MEI FIX KIYA */
+.auth-input, 
+.form-control, 
+.auth-form input[type="text"], 
+.auth-form input[type="email"], 
+.auth-form input[type="password"] {
+  padding: 12px;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 6px !important;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+}
+
+.auth-input:focus, .form-control:focus {
+  outline: none;
+  border-color: #2563eb !important;
+}
+
+/* 🎯 BUTTON STYLES (HOVER BLACK AND TEXT WHITE) */
+.auth-btn, .checkout-btn, .btn-primary, .auth-form button {
+  width: 100%;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+/* 🔥 HOVER OVERRIDE FOR ALL PRIMARY BUTTONS */
+.auth-btn:hover, .checkout-btn:hover, .btn-primary:hover, .auth-form button:hover {
+  background-color: #1e293b !important;
+  color: #ffffff !important;
+}
+
+.auth-redirect, .auth-switch-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.auth-redirect a, .auth-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-redirect a:hover, .auth-link:hover {
+  text-decoration: underline;
+}
+
+.payment-label-main { font-size: 1.1rem; margin-bottom: 10px; }
+.radio-group { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.radio-input { width: 18px; height: 18px; cursor: pointer; }
+.radio-label { font-size: 1rem; cursor: pointer; color: #1e293b; }
